@@ -28,12 +28,12 @@
 				<% end %>
 				<%= link_to 'About', about_path %>
 			</li>
-			<% if current_page?(root_path) %>
+			<% if current_page?(kitkats_path) %>
 				<li class="active">
 			<%else %>
 				<li>
 			<% end %>
-				<%= link_to "Kit Kats", '#' %>
+				<%= link_to "Kit Kats", kitkats_path %>
 			</li>
 		</ul>
 	</div>

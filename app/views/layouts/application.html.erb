@@ -11,12 +11,12 @@
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a href="" class="navbar-brand">きっとカツ</a>
+			<%= link_to "きっとカツ", root_path, class: "navbar-brand" %>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Kit Kats</a></li>
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to 'About', about_path %></li>
+			<li><%= link_to "Kit Kats", '#' %></li>
 		</ul>
 	</div>
 </nav>

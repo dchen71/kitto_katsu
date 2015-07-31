@@ -1,0 +1,14 @@
+<% provide(:title, 'Kit Kats') %>
+<div class="container">
+	<h1>Flavors</h1>
+	<% @kitkats.each do |k| %>
+	<div class="col-md-4 well">
+		<h2><%= k.name %></h2>
+		<p><%= k.description %></p>
+		<p>Approximate cost:<%= k.cost %></p>
+	</div>
+	<div class="col-md-6 col-md-offset-2" well>
+	<img src="<%= k.image_url %>">
+	</div>
+	<% end %>
+</div>

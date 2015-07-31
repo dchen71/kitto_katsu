@@ -17,3 +17,14 @@ Home Page
 #title-about{
 	transform: translateY(170%);
 }
+
+/*
+About Page
+ */
+
+.carousel .item img{
+	max-height: 400px;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}

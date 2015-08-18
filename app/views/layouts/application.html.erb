@@ -36,6 +36,15 @@
 				<%= link_to "Kit Kats", kitkats_path %>
 			</li>
 		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<% if current_page?(locations_path) %>
+				<li class="active">
+			<%else %>
+				<li>
+			<% end %>
+				<%= link_to "Locations", locations_path %>
+			</li>
+		</ul>
 	</div>
 </nav>
 

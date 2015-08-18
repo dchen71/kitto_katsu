@@ -10,11 +10,19 @@ Home Page
  */
 #title-background{
 	position: fixed;
-	height: auto;
+	height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: -1;
+	background: image-url('title.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+
+//Background image of the home page
+#bg-illust{
 }
 
 #title-about{

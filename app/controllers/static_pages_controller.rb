@@ -6,4 +6,8 @@ class StaticPagesController < ApplicationController
   def about
 
   end
+
+  def locations
+
+  end
 end

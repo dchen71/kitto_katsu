@@ -19,8 +19,6 @@ Home Page
 	background-size: cover;
 }
 
-
-
 //Background image of the home page
 #bg-illust{
 }
@@ -52,4 +50,15 @@ Kit Kats
 .kitkat-img img{
 	height: 300px;
 	width: 400px;
+}
+
+/*
+Google Maps
+ */
+
+#googleMap{
+	min-width:500px;
+	min-height:380px;
+	width: 70%;
+	height: 40%;
 }

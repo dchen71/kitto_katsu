@@ -1,10 +1,26 @@
 <% provide(:title, 'Locations') %>
-<img src="assets/title.jpg" id="title-background">
-<div class="container-fluid  col-md-4 col-md-offset-4">
-	<div class="jumbotron text-center" id="title-about">
-		<h3>KITTO KATSU!</h3>
+<div id="title-background"></div>
+<div class="container-fluid  col-md-8 col-md-offset-2">
+	<div class="jumbotron" id="">
+		<h3>Kit Kat Chocolatory Locations</h3>
 		<hr>
-		<p>Ever wondered about the flavors of kit kats that you may be missing out?</p>
+		<div class="stores">
+			<h4>Tokyo</h4>
+			<hr class="col-md-2"><span class="col-md-10"></span>
+			<div class="row">
+				<div class="col-md-6">
+					<p>〒171-0022 Tokyo, Toshima</p>
+					<p>西武池袋本店</p>
+					<p>南池袋1−28−1</p>
+				</div>
+				<div class="col-md-6">
+					<p>大丸東京店 地下1階 ほっぺタウン</p>
+					<p>東京都千代田区丸の内1-9-1</p>
+					<p>電話番号 03-6895-8735</p>
+				</div>
+			</div>
+		</div>
+		<div id="googleMap"></div>
 
 		<%= link_to 'About', about_path, class: 'btn btn-primary' %>
 	</div>

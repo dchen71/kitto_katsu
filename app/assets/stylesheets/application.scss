@@ -82,12 +82,17 @@ Kit Kats
 
 .kitkats{
 	margin-bottom: 20px;
-	box-shadow: 5px 5px;
+	min-height: 500px;
 }
 
-.kitkat-img img{
+.kitkat-img{
 	height: 300px;
 	width: 400px;
+}
+
+.kitkat-img-thumb{
+	height: 150px;
+	width: 200px;
 }
 
 /*

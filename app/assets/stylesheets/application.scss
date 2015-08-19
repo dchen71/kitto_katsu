@@ -21,6 +21,15 @@ body{
     background: -moz-linear-gradient(#330019, #660033); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#330019, #660033); /* Standard syntax (must be last) */
     border-color: black;
+    .container{
+    	li{
+    		a{
+		    	&:hover{
+		    		color: white;
+		    	}
+    		}
+		}
+    }
 }
 
 .title{

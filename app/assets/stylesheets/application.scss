@@ -82,7 +82,12 @@ Kit Kats
 
 .kitkats{
 	margin-bottom: 20px;
-	min-height: 500px;
+	opacity: .65;
+	-webkit-transition: opacity 0.5s ease-in-out; /* Safari */
+    transition: opacity 0.5s ease-in-out;
+	&:hover{
+		opacity: 1;
+	}
 }
 
 .kitkat-img{

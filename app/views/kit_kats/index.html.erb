@@ -13,6 +13,31 @@
 		<div class="col-md-6 col-md-offset-2 kitkat-img">
 			<img src="<%= k.image_url %>">
 		</div>
+		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal-<%= k.name[1..4] %>">More Info</button>
+	</div>
+	
+	<!-- Modal -->
+	<div id="modal-<%= k.name[1..4] %>" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title"><%= k.name %></h4>
+	      </div>
+	      <div class="modal-body">
+	        <img class="kitkat-img col-md-4" src="<%= k.image_url %>" >
+	        <p><%= k.description %></p>
+	      </div>
+	      <div class="modal-footer">
+			<p class="pull-left">Approximate cost:<%= k.cost %> 円</p>
+			<p>Approximate location: <%= k.location %></p>
+	        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	
+	  </div>
 	</div>
 	<% end %>
 </div>

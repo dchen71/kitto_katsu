@@ -1,8 +1,30 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$brown: #330019;
+
+/*
+Global
+ */
+
 body{
-	background-color: #F23383;
+	background-color: $brown;
+}
+
+.well{
+	opacity: .9;
+}
+
+.navbar-default{
+	background: -webkit-linear-gradient(#330019, #660033); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#330019, #660033); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#330019, #660033); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#330019, #660033); /* Standard syntax (must be last) */
+    border-color: black;
+}
+
+.title{
+	color:white;
 }
 
 /*
@@ -17,10 +39,6 @@ Home Page
 	z-index: -1;
 	background: image-url('title.jpg') no-repeat center center fixed;
 	background-size: cover;
-}
-
-//Background image of the home page
-#bg-illust{
 }
 
 #title-about{

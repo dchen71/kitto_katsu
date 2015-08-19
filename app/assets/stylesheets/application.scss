@@ -106,7 +106,24 @@ Google Maps
 
 #googleMap{
 	min-width:500px;
-	min-height:380px;
+	min-height:450px;
 	width: 70%;
 	height: 40%;
+}
+
+/*
+Locations
+ */
+
+.store{
+	p{
+		margin-bottom: 0;
+	}
+	.store-content{
+		font-style: italic;
+		font-size: 90%;
+	}
+	.store-title{
+		font-weight: bold;
+	}
 }

@@ -4,9 +4,19 @@
 	<div class="jumbotron" id="">
 		<h2>Kit Kat Chocolatory Locations</h2>
 		<hr>
+		<div id="googleMap" class="col-md-offset-2"></div>
+		<br>
 		<div class="stores">
-			<div class="stores-location">
-				<h3>Tokyo</h3>
+			<ul class="nav nav-tabs nav-justified">
+			  <li class="active"><a data-toggle="tab" href="#stores-tokyo">Tokyo</a></li>
+			  <li><a data-toggle="tab" href="#stores-nagoya">Nagoya</a></li>
+			  <li><a data-toggle="tab" href="#stores-kyoto">Kyoto</a></li>
+			  <li><a data-toggle="tab" href="#stores-osaka">Osaka</a></li>
+			  <li><a data-toggle="tab" href="#stores-sapporo">Sapporo</a></li>
+			</ul>
+			
+			<div class="tab-content">
+			  <div id="stores-tokyo" class="tab-pane fade in active">
 				<div class="row">
 					<div class="col-md-6">
 						<p>大丸東京店</p>
@@ -27,9 +37,8 @@
 						<p>Contact: <em>03-5949-2026</em></p>
 					</div>
 				</div>
-			</div>
-			<div class="stores-location">
-				<h3>Nagoya</h3>
+			  </div>
+			  <div id="stores-nagoya" class="tab-pane fade">
 				<div class="row">
 					<div class="col-md-6">
 						<p>大丸東京店</p>
@@ -41,9 +50,8 @@
 						<p>Contact: <em>052-261-5519</em></p>
 					</div>
 				</div>
-			</div>
-			<div class="stores-location">
-				<h3>Kyoto</h3>
+			  </div>
+			  <div id="stores-kyoto" class="tab-pane fade">
 				<div class="row">
 					<div class="col-md-6">
 						<p>大丸京都店</p>
@@ -54,22 +62,8 @@
 						<p>Contact: <em>075-211-8111</em></p>
 					</div>
 				</div>
-			</div>
-			<div class="stores-location">
-				<h3>Sapporo</h3>
-				<div class="row">
-					<div class="col-md-6">
-						<p>大丸札幌店</p>
-						<p>大丸札幌店B1 ほっぺタウン内</p>
-						<p>札幌市中央区北5条西4丁目7番地</p>
-						<p>Hours:</p> 
-						<p><em>Everyday: 10AM-8PM</em></p>
-						<p>Contact: <em>011-828-1111</em></p>
-					</div>
-				</div>
-			</div>
-			<div class="stores-location">
-				<h3>Osaka</h3>
+			  </div>
+			  <div id="stores-osaka" class="tab-pane fade">
 				<div class="row">
 					<div class="col-md-6">
 						<p>〒171-0022 Tokyo, Toshima</p>
@@ -81,12 +75,21 @@
 						<p>Contact: <em>06-6343-1231</em></p>
 					</div>
 				</div>
+			  </div>
+			  <div id="stores-sapporo" class="tab-pane fade">
+				<div class="row">
+					<div class="col-md-6">
+						<p>大丸札幌店</p>
+						<p>大丸札幌店B1 ほっぺタウン内</p>
+						<p>札幌市中央区北5条西4丁目7番地</p>
+						<p>Hours:</p> 
+						<p><em>Everyday: 10AM-8PM</em></p>
+						<p>Contact: <em>011-828-1111</em></p>
+					</div>
+				</div>
+			  </div>
 			</div>
 		</div>
-		<br>
-		<h3>Map</h3>
-		<hr>
-		<div id="googleMap" class="col-md-offset-2"></div>
 
 	</div>
 </div>

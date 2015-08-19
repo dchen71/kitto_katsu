@@ -22,8 +22,19 @@ body{
     background: linear-gradient(#330019, #660033); /* Standard syntax (must be last) */
     border-color: black;
     .container{
-    	li{
+    	.navbar-header{
     		a{
+    			color:white;
+    			&:hover{
+    				color:brown;
+    			}
+    		}
+    	}
+    	li{
+    		border-left-style: solid;
+    		border-right-style: solid;
+    		a{
+    			color: red;
 		    	&:hover{
 		    		color: white;
 		    	}

@@ -51,5 +51,9 @@
 
 <%= yield %>
 
+<% if current_page?(locations_path) %>
+<script type="text/javascript" src="assets/maps.js"></script>
+<% end %>
+
 </body>
 </html>

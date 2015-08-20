@@ -1,2 +1,2 @@
 # kitto_katsu
-A site which lists some of the wonders of the eastern world of Kit Kats
+A site which contains generalized information about Japanese Kit Kats as well as map data for the stores in Japan

@@ -140,7 +140,16 @@ function initialize() {
 	  infowindow.setContent(osa1_cont);
 	  infowindow.open(map,marker_osaka);
   });
+
+  map.addListener('click', function(){
+  	infowindow.close();
+  });
+  
+  map.addListener('drag', function(){
+  	infowindow.close();
+  });
 }
+
 google.maps.event.addDomListener(window, 'load', initialize);
 
 

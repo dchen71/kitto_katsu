@@ -114,31 +114,49 @@ function initialize() {
   marker_nagoya.addListener('click', function(){
 	  infowindow.setContent(nag1_cont);
 	  infowindow.open(map,marker_nagoya);
+	  disableBounce();
+	  toggleBounce(this);
+	  map.setZoom(15);
   });
 
   marker_tokyo1.addListener('click', function(){
 	  infowindow.setContent(tok1_cont);
 	  infowindow.open(map,marker_tokyo1);
+	  disableBounce();
+	  toggleBounce(this);
+	  map.setZoom(15);
   });
 
   marker_tokyo2.addListener('click', function(){
 	  infowindow.setContent(tok2_cont);
 	  infowindow.open(map,marker_tokyo2);
+	  disableBounce();
+	  toggleBounce(this);
+	  map.setZoom(15);
   });
 
   marker_kyoto.addListener('click', function(){
 	  infowindow.setContent(kyo1_cont);
 	  infowindow.open(map,marker_kyoto);
+	  disableBounce();
+	  toggleBounce(this);
+	  map.setZoom(15);
   });
 
   marker_sapporo.addListener('click', function(){
 	  infowindow.setContent(sap1_cont);
 	  infowindow.open(map,marker_sapporo);
+	  disableBounce();
+	  toggleBounce(this);
+	  map.setZoom(15);
   });
 
   marker_osaka.addListener('click', function(){
 	  infowindow.setContent(osa1_cont);
 	  infowindow.open(map,marker_osaka);
+	  disableBounce();
+	  toggleBounce(this);
+	  map.setZoom(15);
   });
 
   map.addListener('click', function(){
@@ -148,10 +166,86 @@ function initialize() {
   map.addListener('drag', function(){
   	infowindow.close();
   });
+
+  $('#store-kyoto1').click(function(){
+	  infowindow.setContent(kyo1_cont);
+	  infowindow.open(map,marker_kyoto);
+	  disableBounce();
+	  marker_kyoto.setAnimation(google.maps.Animation.BOUNCE);
+	  map.setZoom(15);
+  });
+
+  $('#store-tokyo1').click(function(){
+	  infowindow.setContent(tok1_cont);
+	  infowindow.open(map,marker_tokyo1);
+	  disableBounce();
+	  marker_tokyo1.setAnimation(google.maps.Animation.BOUNCE);
+	  map.setZoom(15);
+  });
+
+  $('#store-tokyo2').click(function(){
+	  infowindow.setContent(tok2_cont);
+	  infowindow.open(map,marker_tokyo2);
+	  disableBounce();
+	  marker_tokyo2.setAnimation(google.maps.Animation.BOUNCE);
+	  map.setZoom(15);
+  });
+
+  $('#store-osaka1').click(function(){
+	  infowindow.setContent(osa1_cont);
+	  infowindow.open(map,marker_osaka);
+	  disableBounce();
+	  marker_osaka.setAnimation(google.maps.Animation.BOUNCE);
+	  map.setZoom(15);
+  });
+
+  $('#store-sapporo1').click(function(){
+	  infowindow.setContent(sap1_cont);
+	  infowindow.open(map,marker_sapporo);
+	  disableBounce();
+	  marker_sapporo.setAnimation(google.maps.Animation.BOUNCE);
+	  map.setZoom(15);
+  });
+
+  $('#store-nagoya1').click(function(){
+	  infowindow.setContent(nag1_cont);
+	  infowindow.open(map,marker_nagoya);
+	  disableBounce();
+	  marker_nagoya.setAnimation(google.maps.Animation.BOUNCE);
+	  map.setZoom(15);
+  });
+
+  function disableBounce(){
+  	if (marker_nagoya.getAnimation() !== null) {
+    	marker_nagoya.setAnimation(null);
+    }
+  	if (marker_kyoto.getAnimation() !== null) {
+    	marker_kyoto.setAnimation(null);
+    }
+  	if (marker_osaka.getAnimation() !== null) {
+    	marker_osaka.setAnimation(null);
+    }
+  	if (marker_sapporo.getAnimation() !== null) {
+    	marker_sapporo.setAnimation(null);
+    }
+  	if (marker_tokyo2.getAnimation() !== null) {
+    	marker_tokyo2.setAnimation(null);
+    }
+  	if (marker_tokyo1.getAnimation() !== null) {
+    	marker_tokyo1.setAnimation(null);
+    }
+  }
+
+  function toggleBounce(marker){
+    if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
 
 
 

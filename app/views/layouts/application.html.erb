@@ -3,7 +3,7 @@
 <head>
   <title><%= yield(:title) %> - きっとカツ</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -52,7 +52,7 @@
 <%= yield %>
 
 <% if current_page?(locations_path) %>
-<script type="text/javascript" src="assets/maps.js"></script>
+<%= javascript_include_tag "maps.js" %>
 <% end %>
 
 </body>

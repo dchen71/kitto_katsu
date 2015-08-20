@@ -4,7 +4,7 @@
 	<% @kitkats.each do |k| %>
 	<div class="kitkats col-md-4">
 		<div class="text-center well">
-			<img src="<%= k.image_url %>" class="kitkat-img-thumb">
+			<%= image_tag k.image_url, class: 'kitkat-img-thumb' %>
 			<h2><%= k.name %></h2>
 			<hr>
 			<p>Approximate cost:<%= k.cost %> 円</p>
@@ -23,7 +23,7 @@
 	        <h4 class="modal-title"><%= k.name %></h4>
 	      </div>
 	      <div class="modal-body">
-	        <img class="kitkat-img col-md-4" src="<%= k.image_url %>" >
+	        <%= image_tag k.image_url, class: "kitkat-img col-md-4" %>
 	        <p><%= k.description %></p>
 	      </div>
 	      <div class="modal-footer">

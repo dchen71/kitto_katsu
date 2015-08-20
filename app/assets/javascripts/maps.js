@@ -57,45 +57,57 @@ function initialize() {
 						"<p class='store-content'>03-6895-8735</p>" +
 					 "</div>";
 
-  const tok2_cont =  "<p class='store-content'>大丸東京店 地下1階 ほっぺタウン</p>" +
-					  "<p class='store-content'>東京都千代田区丸の内1-9-1</p>" +
-					  "<p>Hours</p>" +
-					  "<p class='store-content'>M-F: 10AM - 9PM</p>" +
-					  "<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
-					  "<p>Phone Number</p>" +
-					  "<p class='store-content'>03-6895-8735</p>";
+  const tok2_cont =  "<div class='store'>" +
+						"<p class='store-title'>Address</p>" +
+						"<p class='store-content'>西武池袋本店 地下1階</p>" +
+						"<p class='store-content'>東京都豊島区南池袋1-28-1</p>" +
+						"<p class='store-title'>Hours</p> " +
+						"<p class='store-content'>M-F: 10AM - 9PM</p>" +
+						"<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
+						"<p class='store-title'>Phone Number</p> " +
+						"<p class='store-content'>03-5949-2026</p>" +
+					"</div>";
 
-  const nag1_cont =  "<p class='store-content'>大丸東京店 地下1階 ほっぺタウン</p>" +
-					  "<p class='store-content'>東京都千代田区丸の内1-9-1</p>" +
-					  "<p>Hours</p>" +
-					  "<p class='store-content'>M-F: 10AM - 9PM</p>" +
-					  "<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
-					  "<p>Phone Number</p>" +
-					  "<p class='store-content'>03-6895-8735</p>";
+  const nag1_cont =  "<div class='store'>" +
+						"<p class='store-title'>Address</p>" +
+						"<p class='store-content'>松坂屋名古屋店 本館地下1階 ごちそうパラダイス</p>" +
+						"<p class='store-content'>名古屋市中区栄3-16-1</p>" +
+						"<p class='store-title'>Hours</p> " +
+						"<p class='store-content'>Everyday: 10AM - 8PM</p>" +
+						"<p class='store-title'>Phone Number</p> " +
+						"<p class='store-content'>052-261-5519</p>" +
+					"</div>";
 
-  const kyo1_cont =  "<p class='store-content'>大丸東京店 地下1階 ほっぺタウン</p>" +
-					  "<p class='store-content'>東京都千代田区丸の内1-9-1</p>" +
-					  "<p>Hours</p>" +
-					  "<p class='store-content'>M-F: 10AM - 9PM</p>" +
-					  "<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
-					  "<p>Phone Number</p>" +
-					  "<p class='store-content'>03-6895-8735</p>";
+  const kyo1_cont =  "<div class='store'>" +
+						"<p class='store-title'>Address</p>" +
+						"<p class='store-content'>大丸京都店 地下1階 ごちそうパラダイス</p>" +
+						"<p class='store-content'>京都市下京区四条通高倉西入立売西町79番地</p>" +
+						"<p class='store-title'>Hours</p> " +
+						"<p class='store-content'>Everyday: 10AM-8PM</p>" +
+						"<p class='store-title'>Phone Number</p>" +
+						"<p class='store-content'>075-211-8111</p>" +
+					"</div>";
 
-  const sap1_cont =  "<p class='store-content'>大丸東京店 地下1階 ほっぺタウン</p>" +
-					  "<p class='store-content'>東京都千代田区丸の内1-9-1</p>" +
-					  "<p>Hours</p>" +
-					  "<p class='store-content'>M-F: 10AM - 9PM</p>" +
-					  "<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
-					  "<p>Phone Number</p>" +
-					  "<p class='store-content'>03-6895-8735</p>";
+  const sap1_cont =  "<div class='store'>" +
+						"<p class='store-title'>Address</p>" +
+						"<p class='store-content'>大丸札幌店B1 ほっぺタウン内</p>" +
+						"<p class='store-content'>札幌市中央区北5条西4丁目7番地</p>" +
+						"<p class='store-title'>Hours</p> " +
+						"<p class='store-content'>Everyday: 10AM-8PM</p>" +
+						"<p class='store-title'>Phone Number</p>" +
+						"<p class='store-content'>011-828-1111</p>" +
+					"</div>";
 
-  const osa1_cont =  "<p class='store-content'>大丸東京店 地下1階 ほっぺタウン</p>" +
-					  "<p class='store-content'>東京都千代田区丸の内1-9-1</p>" +
-					  "<p>Hours</p>" +
-					  "<p class='store-content'>M-F: 10AM - 9PM</p>" +
-					  "<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
-					  "<p>Phone Number</p>" +
-					  "<p class='store-content'>03-6895-8735</p>";
+  const osa1_cont =  "<div class='store'>" +
+						"<p class='store-title'>Address</p>" +
+						"<p class='store-content'>大丸梅田店　地下1階 ごちそうパラダイス</p>" +
+						"<p class='store-content'>大阪市北区梅田3-1-1</p>" +
+						"<p class='store-title'>Hours</p> " +
+						"<p class='store-content'>M-F: 10AM - 8:30PM</p>" +
+						"<p class='store-content'>Sa-Sun: 10AM-8PM</p>" +
+						"<p class='store-title'>Phone Number</p>" +
+						"<p class='store-content'>06-6343-1231</p>" +
+					"</div>";
 
   var infowindow = new google.maps.InfoWindow({
   content:tok1_cont});

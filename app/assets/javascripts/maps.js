@@ -108,11 +108,38 @@ function initialize() {
 						"<p class='store-title'>Phone Number</p>" +
 						"<p class='store-content'>06-6343-1231</p>" +
 					"</div>";
+  
+  var infowindow = new google.maps.InfoWindow();
+  
+  marker_nagoya.addListener('click', function(){
+	  infowindow.setContent(nag1_cont);
+	  infowindow.open(map,marker_nagoya);
+  });
 
-  var infowindow = new google.maps.InfoWindow({
-  content:tok1_cont});
+  marker_tokyo1.addListener('click', function(){
+	  infowindow.setContent(tok1_cont);
+	  infowindow.open(map,marker_tokyo1);
+  });
 
-infowindow.open(map,marker_nagoya);
+  marker_tokyo2.addListener('click', function(){
+	  infowindow.setContent(tok2_cont);
+	  infowindow.open(map,marker_tokyo2);
+  });
+
+  marker_kyoto.addListener('click', function(){
+	  infowindow.setContent(kyo1_cont);
+	  infowindow.open(map,marker_kyoto);
+  });
+
+  marker_sapporo.addListener('click', function(){
+	  infowindow.setContent(sap1_cont);
+	  infowindow.open(map,marker_sapporo);
+  });
+
+  marker_osaka.addListener('click', function(){
+	  infowindow.setContent(osa1_cont);
+	  infowindow.open(map,marker_osaka);
+  });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 

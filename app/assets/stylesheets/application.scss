@@ -2,6 +2,8 @@
 @import "bootstrap";
 
 $brown: #330019;
+$iphone_W: 500px;
+$iphone_H: 600px;
 
 /*
 Global
@@ -63,6 +65,12 @@ Home Page
 
 #title-about{
 	transform: translateY(170%);
+	@media screen and (max-width: $iphone_W){
+		transform: translateY(250%);
+	}
+	@media screen and (max-height: $iphone_H){
+		transform: translateY(50%);
+	}
 }
 
 /*

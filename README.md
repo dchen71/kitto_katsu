@@ -1,2 +1,2 @@
 # kitto_katsu
-A site which contains generalized information about Japanese Kit Kats as well as map data for the stores in Japan
+A site which contains generalized information about Japanese Kit Kats as well as map data for the stores in Japan. Utilizes responsive design to allow similar viewing experience for mobile users and desktop users.

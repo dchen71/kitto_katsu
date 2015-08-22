@@ -5,12 +5,6 @@ $brown: #330019;
 $iphone_H: 600px;
 $iphone_W: 500px;
 
-@mixin iphone{
-	@media screen and (max-height: $iphone_H) and (max-width: $iphone_W){
-		@content;
-	}
-}
-
 /*
 Global
  */
@@ -112,7 +106,7 @@ Kit Kats
 .kitkat-img-thumb{
 	height: 150px;
 	width: 200px;
-	@include iphone{
+	@media screen and (max-height: $iphone_H) and (max-width: $iphone_W){
 		height: 120px;
 		width: 150px;
 	}
@@ -124,9 +118,10 @@ Google Maps
 
 #googleMap{
 	min-width:500px;
-	min-height:450px;
+	min-height:400px;
 	width: 70%;
 	height: 40%;
+	margin-bottom: 20px;
 }
 
 /*

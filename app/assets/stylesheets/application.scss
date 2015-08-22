@@ -104,11 +104,11 @@ Kit Kats
 }
 
 .kitkat-img-thumb{
-	height: 150px;
-	width: 200px;
-	@media screen and (max-height: $iphone_H) and (max-width: $iphone_W){
-		height: 120px;
-		width: 150px;
+	height: 120px;
+	width: 150px;
+	@media screen and (min-height: 600px) and (max-width: 800px){
+		height: 150px;
+		width: 200px;
 	}
 }
 

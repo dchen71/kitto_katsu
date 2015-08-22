@@ -2,8 +2,14 @@
 @import "bootstrap";
 
 $brown: #330019;
-$iphone_W: 500px;
 $iphone_H: 600px;
+$iphone_W: 500px;
+
+@mixin iphone{
+	@media screen and (max-height: $iphone_H) and (max-width: $iphone_W){
+		@content;
+	}
+}
 
 /*
 Global
@@ -64,11 +70,11 @@ Home Page
 }
 
 #title-about{
-	transform: translateY(170%);
-	@media screen and (max-width: $iphone_W){
+	transform: translateY(150%);
+	@media screen and (max-width: 500px) and (min-width: 320px){
 		transform: translateY(250%);
 	}
-	@media screen and (max-height: $iphone_H){
+	@media screen and (orientation: landscape) and (max-height: 768px){
 		transform: translateY(50%);
 	}
 }
@@ -106,6 +112,10 @@ Kit Kats
 .kitkat-img-thumb{
 	height: 150px;
 	width: 200px;
+	@include iphone{
+		height: 120px;
+		width: 150px;
+	}
 }
 
 /*

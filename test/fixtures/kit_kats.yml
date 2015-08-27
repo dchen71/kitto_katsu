@@ -4,8 +4,16 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+k1:
+  image_url: k1.jpg 
+  name: Tochi Otome		
+  cost: 400, 		
+  location: Tochigi	
+  description: Tochigi limited edition strawberry flavored. Tochigi prefecture is an area well known for its strawberries.
+
+k2:
+  image_url: k2.jpg
+  name: Amaou Strawberry
+  cost: 400, 		
+  location: Kyushu
+  description: Kyushu limited edition strawberry flavored. Amaou are a speciality type of strawberry.

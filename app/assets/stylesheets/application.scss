@@ -130,11 +130,21 @@ Google Maps
 Locations
  */
 
+#storeSelect{
+	@media screen and (min-height: 600px) and (max-width: 800px){
+		padding-top: 240px;
+	}	
+	@media screen and (min-height: 450px) and (max-width: 800px) and (orientation: landscape) {
+		padding-top: 400px;
+	}	
+}
+
 .stores-tokyo{
 	row{
 		margin-right: 0;
 		margin-left: 0;
 	}
+
 }
 
 .store{

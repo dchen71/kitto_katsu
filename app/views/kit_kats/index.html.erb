@@ -2,7 +2,7 @@
 <div class="container">
 	<h1 class="title">Flavors</h1>
 	<% @kitkats.each do |k| %>
-	<div class="kitkats col-md-4 col-xs-6">
+	<div class="kitkats col-md-4 col-xs-12">
 		<div class="text-center well">
 			<%= image_tag k.image_url, class: 'kitkat-img-thumb' %>
 			<h2><%= k.name %></h2>
@@ -23,7 +23,7 @@
 	        <h4 class="modal-title"><%= k.name %></h4>
 	      </div>
 	      <div class="modal-body">
-	        <%= image_tag k.image_url, class: "kitkat-img col-md-4 col-xs-4" %>
+	        <%= image_tag k.image_url, class: "img-responsive col-md-4 col-xs-4" %>
 	        <p><%= k.description %></p>
 	      </div>
 	      <div class="modal-footer">

@@ -78,12 +78,18 @@ About Page
  */
 
 .carousel .item img{
-	max-height: 400px;
+	max-height: 370px;
 	height: auto;
 	width: 100%;
 	overflow: hidden;
 }
 
+
+#myCarousel {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
 /*
 Kit Kats
  */
